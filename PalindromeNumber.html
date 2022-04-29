@@ -34,7 +34,7 @@
                     //shave off first digit and last digit  //e.g. 1234 -> 23
                     x = x - firstDigit * Math.pow(10, log); //e.g. 1234 - 1000 = 234
                     x = Math.floor(x / 10);                 //e.g. 234 // 10 = 23
-                    log -= 2;
+                    log -= 2;  //subtract log by 2 to account for 2 removed digits
                 }
                 return true;
             }
