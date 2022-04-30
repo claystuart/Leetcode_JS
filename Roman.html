@@ -10,12 +10,32 @@
 
 <body>
     <script>
+        //Description: Convert Roman Numeral to Integer
+        //Constraints: Only letters I V X L C D M
+        //Constraints: Number ranges from 1 to 3999
         /**
-     * @param {string} s
-     * @return {number}
-      */
+        * @param {string} s
+        * @return {number}
+        */
         var romanToInt = function (s) {
-
+            //Pseudocode:
+            // Create a map named convert[string -> integer] to convert roman numerals into numeric values
+            // Create variable named accumulator to accumulate final value
+            // Create array named numerals
+            // Split argument string (s) into array and assign to numerals
+            // Create variable named register to hold temporary roman letters that get shifted off numerals
+            
+            //**logic**
+            // if numerals.length <= 0, return zero
+            //
+            // While numerals.length > 0, shift numerals[0] into register
+            // if register == V, L, D, or M, convert register and += into accumulator
+            // if register == I, X, or C, it could modify next letter in numerals, so...
+                //if numerals.length < 1, no letters with which to modify, so just convert register and += into accumulator.
+                //else, check numerals[0] to see if it modifies with the letter in register.
+                        //if numerals[0] modifies with register, push numerals[0] into register and then convert register and += accumulator
+                        //else convert register and += accumulator
+            // return final
         };
     </script>
 </body>
