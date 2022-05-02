@@ -49,21 +49,21 @@
             //  copy element at index into tail
             //  set element at index to null since it's been swapped
             //  increment both index and tail
-            //  increment swaps++
+            //
             //if val is found at index:
             //  set element at index to null
-            //  increment ONLY index
+            //  increment index
+            //  increment removals
             //
-            //return index - swaps
+            //return index - removals
 
             let index = 0;
             let tail = 0;
             let removals = 0;
 
-            if (nums.length < 1)
-                return 0;
-            if (val > 50) //this did work after subission
-                return nums.length;
+            //shortcut returns
+            if (nums.length < 1) return 0;
+            if (val > 50)        return nums.length;
 
             while (index < nums.length) {
                 if (nums[index] != val && index == tail) {        //value not found yet
@@ -76,7 +76,7 @@
                     index++;
                     tail++;
                 }
-                else { //value found
+                else {                                            //value found
                     nums[index] = null;
                     index++;
                     removals++;
