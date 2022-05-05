@@ -48,8 +48,16 @@ var isValid = function (s) {
     return true;
 };
 
-console.log(isValid("()"));
-console.log(isValid("()[]{}"));
-console.log(isValid("(]"));
-console.log(isValid("["));
-console.log(isValid("(("));
+//Simple Test Framework
+new Map([
+    ["()", true],
+    ["()[]{}", true],
+    ["(]", false],
+    ["[", false],
+    ["((", false],
+]).forEach( function(value, key) {
+    if (isValid(key) === value) 
+        console.log(`Pass: ${key} returns ${value}`) 
+    else
+        console.log(`Fail: ${key} does not return ${value}`)
+});
