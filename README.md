@@ -11,4 +11,5 @@ A github project to record my Leetcode practice in Javascript.
 26. Remove Duplicates from Sorted Array (26)
 27. Remove Element (27)
 28. Implement strStr() (28)
+35. Search Insert Position (35)
 
