@@ -7,6 +7,7 @@ A github project to record my Leetcode practice in Javascript.
 13. Roman to Integer (13)
 14. Longest Common Prefix (14)
 20. Valid Parentheses (20)
-21. Valid Parentheses (21)
+21. Merge Two Sorted Lists (21)
+26. Remove Duplicates from Sorted Array (26)
 27. Remove Element (27)
 
