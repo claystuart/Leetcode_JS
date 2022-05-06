@@ -14,4 +14,5 @@ A github project to record my Leetcode practice in Javascript.
 35. Search Insert Position (35)
 53. Maximum Subarray (53)
 58. Length of Last Word (58)
+66. Plus One (66)
 
