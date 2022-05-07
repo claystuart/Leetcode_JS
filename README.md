@@ -15,4 +15,5 @@ A github project to record my Leetcode practice in Javascript.
 53. Maximum Subarray (53)
 58. Length of Last Word (58)
 66. Plus One (66)
+67. Add Binary (67)
 
