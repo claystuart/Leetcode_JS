@@ -18,4 +18,5 @@ A github project to record my Leetcode practice in Javascript.
 67. Add Binary (67)
 69. Sqrt(x) (69)
 70. Climbing Stairs (70)
+83. Remove Duplicates from Sorted List (83)
 88. Merge Sorted Array (88)
