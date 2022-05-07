@@ -17,4 +17,4 @@ A github project to record my Leetcode practice in Javascript.
 66. Plus One (66)
 67. Add Binary (67)
 69. Sqrt(x) (69)
-
+70. Climbing Stairs (70)
