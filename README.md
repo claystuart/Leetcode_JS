@@ -16,4 +16,5 @@ A github project to record my Leetcode practice in Javascript.
 58. Length of Last Word (58)
 66. Plus One (66)
 67. Add Binary (67)
+69. Sqrt(x) (69)
 
