@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./images/favicon-16x16.png">
-    <title>Check whether a palindrome number</title>
-</head>
-
-<body>
-    <script>
-        //Problem #9 in LeetCode
+//Problem #9 in LeetCode
         //@param {number} x
         //@return {boolean}
         //Description: Check if integer x reads the same forwards and backwards.
@@ -46,8 +33,3 @@
         console.log(isPalindrome(10));
         console.log(isPalindrome(-121));
         console.log(isPalindrome(-121));
-
-    </script>
-</body>
-
-</html>
