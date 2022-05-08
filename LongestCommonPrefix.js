@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Longest Common Prefix</title>
-    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-</head>
-
-<body>
-    <h1>Directions:</h1>
-    <p>Write a function to find the longest common prefix string amongst an array of strings.</p>
-    <p>If there is no common prefix, return an empty string "".</p>
-
-    <h2>Example 1:</h2>
-    <p>Input: strs = ["flower","flow","flight"]</p>
-    <p>Output: "fl"</p>
-
-    <h2>Example 2:</h2>
-    <p>Input: strs = ["dog","racecar","car"]</p>
-    <p>Output: ""</p>
-    <p>Explanation: There is no common prefix among the input strings.</p>
-
-    <script>
-        /**
+/**
          * @param {string[]} strs
          * @return {string}
          */
@@ -47,7 +21,3 @@
         console.log(longestCommonPrefix(["dog", "racecar", "car"]));
         console.log(longestCommonPrefix(["a"]));
         console.log(longestCommonPrefix([""]));
-    </script>
-</body>
-
-</html>
