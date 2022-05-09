@@ -10,6 +10,9 @@ function ListNode(val, next) {
  * @param {ListNode} l2
  * @return {ListNode}
  */
+//Note: current implementation converts to numbers, adds, and then converts back to linked list.
+//Test 1565 probably uses numbers so big it exceeds the size of a double.
+//Need to reimplement solution using just linked list manipulation.
 var addTwoNumbers = function (l1, l2) {
     let num1 = 0, num2 = 0;
     let multiple = 1;
