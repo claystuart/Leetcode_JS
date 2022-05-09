@@ -14,30 +14,33 @@ function ListNode(val, next) {
 //Test 1565 probably uses numbers so big it exceeds the size of a double.
 //Need to reimplement solution using just linked list manipulation.
 var addTwoNumbers = function (l1, l2) {
-    let num1 = 0, num2 = 0;
-    let multiple = 1;
+
+    let num1 = BigInt(0), num2 = BigInt(0);
+    let multiple = BigInt(1);
 
     while (l1 != null) {
-        num1 = multiple * l1.val + num1;
-        multiple *= 10;
+        num1 = (multiple * BigInt(l1.val)) + num1;
+        multiple = multiple * BigInt(10);
         l1 = l1.next;
     }
 
-    multiple = 1;
+    multiple = BigInt(1);
     while (l2 != null) {
-        num2 = multiple * l2.val + num2;
-        multiple *= 10;
+        num2 = (multiple * BigInt(l2.val)) + num2;
+        multiple = multiple * BigInt(10);
         l2 = l2.next;
     }
     let sum = num1 + num2;
     //good so far
 
     if (sum === 0)
-        return new ListNode(0);
+        return new [0];
+        // return new ListNode(0);
 
     function makeList(number) {
         if (number > 0)
-            return new ListNode(number % 10, makeList(Math.floor(number / 10)));
+            return new ListNode(number % BigInt(10), makeList(number / BigInt(10)));
+            // return new ListNode(number % BigInt(10), makeList(number / BigInt(10)));
         else
             return;
     }
