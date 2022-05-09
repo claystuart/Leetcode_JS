@@ -12,8 +12,14 @@ function ListNode(val, next) {
  */
 //Note: current implementation converts to numbers, adds, and then converts back to linked list.
 //Test 1565 probably uses numbers so big it exceeds the size of a double.
-//Need to reimplement solution using just linked list manipulation.
+//Solved: used BigInt()
+/* Results:
+Runtime: 110 ms, faster than 81.35% of JavaScript online submissions for Add Two Numbers.
+Memory Usage: 49.3 MB, less than 11.06% of JavaScript online submissions for Add Two Numbers.
+*/
 var addTwoNumbers = function (l1, l2) {
+    if (l1.val == 0 && l1.next == null && l2.val == 0 && l2.next == null)
+        return (new ListNode(0));
 
     let num1 = BigInt(0), num2 = BigInt(0);
     let multiple = BigInt(1);
@@ -34,13 +40,12 @@ var addTwoNumbers = function (l1, l2) {
     //good so far
 
     if (sum === 0)
-        return new [0];
-        // return new ListNode(0);
+        return new ListNode(0);
 
     function makeList(number) {
         if (number > 0)
             return new ListNode(number % BigInt(10), makeList(number / BigInt(10)));
-            // return new ListNode(number % BigInt(10), makeList(number / BigInt(10)));
+        // return new ListNode(number % BigInt(10), makeList(number / BigInt(10)));
         else
             return;
     }
@@ -51,16 +56,16 @@ var addTwoNumbers = function (l1, l2) {
 }
 
 function test() {
-    // let a = new ListNode(2, new ListNode(4, new ListNode(3)));
-    // let b = new ListNode(5, new ListNode(6, new ListNode(4)));
-
-    // let list = addTwoNumbers(new ListNode([0]), new ListNode([0]));
-    // printList(list);
-
-    let d = arrayToList([1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]);  
-    let e = arrayToList([5,6,4]);
-    let list = addTwoNumbers(d,e);
+    let a = new ListNode(0);
+    let b = new ListNode(0);
+    console.log(`a: ${a.val}, b: ${b.val}`);
+    let list = addTwoNumbers(a, b);
     printList(list);
+
+    // let d = arrayToList([1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]);
+    // let e = arrayToList([5, 6, 4]);
+    // let list = addTwoNumbers(d, e);
+    // printList(list);
 }
 
 test();
