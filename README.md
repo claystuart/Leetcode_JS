@@ -21,3 +21,4 @@ A github project to record my Leetcode practice in Javascript.
 70. Climbing Stairs (70)
 83. Remove Duplicates from Sorted List (83)
 88. Merge Sorted Array (88)
+125. Valid Palindrome (125)
