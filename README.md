@@ -4,6 +4,7 @@ A github project to record my Leetcode practice in Javascript.
 # Completed Challenges:
 1. Two Sum (1)
 2. Add Two Numbers (2)
+3. Longest Substring Without Repeating Characters (3)
 9. Palindrome (9)
 13. Roman to Integer (13)
 14. Longest Common Prefix (14)
