@@ -3,6 +3,10 @@
  * @param {string} s
  * @return {string}
  */
+/*Results
+Runtime: 5018 ms, faster than 6.23% of JavaScript online submissions for Longest Palindromic Substring.
+Memory Usage: 47.9 MB, less than 50.27% of JavaScript online submissions for Longest Palindromic Substring.
+*/
 var longestPalindrome = function (s) {
     let longest = "";
     let substring = "";
