@@ -7,7 +7,7 @@ var longestPalindrome = function (s) {
     let longest = "";
     let substring = "";
 
-    if (isPalindrome(s))
+    if (s.length === 1 || isPalindrome(s))
         return s
 
     for (let x = 0; x < s.length; x++) {
@@ -16,17 +16,19 @@ var longestPalindrome = function (s) {
             if (isPalindrome(substring) && longest.length < substring.length)
                 longest = substring;
         }
-
+        //exit early when remaining palindromes can't exceed longest
+        if (s.length - x < longest.length)
+            return longest;
     }
     return longest;
 
     /**
-    * @param {string} s
-    * @return {string}
+    * @param {string} substring
+    * @return {bool}
     */
     function isPalindrome(substring) {
-        for (let x = 0, y = substring.length - 1; x <= substring.length; x++, y--) {
-            if (substring[x] !== substring[y])
+        for (let i = 0, y = substring.length - 1; i <= substring.length; i++, y--) {
+            if (substring[i] !== substring[y])
                 return false;
         }
         return true;
