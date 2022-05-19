@@ -9,6 +9,7 @@ A github project to record my Leetcode practice in Javascript.
 5. Longest Palindromic Substring (5)
 6. ZigZag Conversation (6)
 7. Reverse Integer (7)
+8. String to Integer (atoi) (8)
 9. Palindrome (9)
 13. Roman to Integer (13)
 14. Longest Common Prefix (14)
