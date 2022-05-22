@@ -35,3 +35,4 @@ A github project to record my Leetcode practice in Javascript.
 344. Reverse String (344)
 412. Fizz Buzz (412)
 1118. Number of Days in a Month (1118)
+1119. Remove Vowels from a String (1119)
